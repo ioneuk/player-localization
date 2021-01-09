@@ -1,0 +1,18 @@
+<html>
+<head>
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <img src="/Users/ioneuk/Documents/machine-learning/player-localization/dataset/rink.jpg" height="407" width="950" alt="My Image">
+    <script type="text/javascript">
+        $(document).ready(function() {
+        $("img").on("click", function(event) {
+            var x = event.pageX - this.offsetLeft;
+            var y = event.pageY - this.offsetTop;
+            alert("X Coordinate: " + x + " Y Coordinate: " + y);
+        });
+    });
+    </script>
+
+</body>
+</html>
